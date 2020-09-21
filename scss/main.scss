@@ -1,0 +1,120 @@
+@import 'config';
+
+.header{ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 30px;
+
+
+  .left{
+      h1{
+          color:$heading-color;
+          margin-top: 5vh;
+          margin-left:10vh;
+          margin-right: 10vh;
+      }
+      p{
+          color:$text-color;
+          margin-left:10vh;
+          margin-right: 10vh;
+      }
+  }
+
+  .right{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+       div{
+          background-color: #F7F2F8;
+          border-radius: 5%;
+          color: $heading-color;
+        
+      }
+      
+      .one{
+          margin-left:6vh;
+          margin-right: 10vh;
+          margin-left: 1rem;
+          display: flex;
+          justify-content: space-around;
+          @media (max-width:600px) {
+                margin-left: 0;
+                margin-right: 0;
+                flex-direction: column;
+                text-align: center;
+                
+            }
+      }
+      .two{
+           margin-right: 6vh;
+           margin-left: 2rem;
+           display: flex;
+           justify-content: space-around;
+           @media (max-width:600px) {
+                margin-left: 0;
+                margin-right: 0;
+                flex-direction: column;
+                text-align: center;
+            }
+      }
+      .three{
+            margin-left: 5rem;
+            display: flex;
+            justify-content: space-around;
+            @media (max-width:600px) {
+                margin-left: 0;
+                flex-direction: column;
+                text-align: center;
+            }
+      }
+
+     
+
+  }
+  
+    
+}
+
+.boxes{
+     display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   grid-gap: 40px;
+   margin-top: 5px;
+
+  .one,.two,.three{
+      padding: 50px;
+     
+      height: 300px;
+      border:1px solid black;
+      border-radius: 3%;
+      background-color: $box-color;
+      display: flex;
+      flex-direction: column;
+
+      .person{
+          display: flex;
+          flex-direction: row;
+
+          ul{
+              list-style-type: none;
+              line-height: 1px;
+
+          }
+
+      }
+     
+  }
+
+  img{
+      border-radius: 100%;
+  }
+   .two{
+          margin-top: 1rem;
+      }
+      .three{
+          margin-top: 2rem;
+      }
+
+}
